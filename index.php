@@ -8,29 +8,75 @@
 </head>
 
 <body>
-    <form action="index.php" method="get"> <!-- action should be the file name and the method should be declared -->
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" name="exampleInputEmail1" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email.</div>
-        </div>
-        <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" name="exampleInputPassword1" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+    <form action="index.php" method="get">
+        <input type="text" name="number" placeholder="type a num">
+        <input type="submit">
     </form>
+
 </body>
 
 </html>
 
+
 <?php
-echo $_GET["exampleInputEmail1"]; // this is technically an array and we need to get the username
-echo "<br>";
-echo $_GET["exampleInputPassword1"];
-// this data unfortunately is appended to the url tho so it isnt safe.
+//lets try a fizz buzz ltr lol ( divisible by 3 is fizz divisible by 5 is buzz divisible by 3 and 5 is fizzbuzz)
+
+// need to write a function
+
+// write a loop
+
+// write conditions and outputs
+$num = $_GET["number"];
+
+// echo "{$num}";
+for ($i = 0; $i < $num; $i++) {
+    if ($num % 3) {
+        echo "fizz<br>";
+    } elseif ($num % 5) {
+        echo "buzz<br>";
+    };
+    $num--;
+}
+
+$i = 1;
+while ($i <= $num) {
+    if ($i % 15 == 0) {
+        echo "fizzbuzz<br>";
+    } elseif ($i % 5 == 0) {
+        echo "fizz<br>";
+    } elseif ($i % 3 == 0) {
+        echo "buzz<br>";
+    }
+    $i++;
+}
+
+
+$anArray = [1, 2, 3, 4, 5];
+
+foreach ($anArray as $arr) {
+    echo $arr;
+}
+
+switch ($num) {
+    case 2:
+        echo "that was number 2<br>";
+        break;
+
+    default:
+        echo "not number 2<br>";
+        break;
+}
+
+
+// associative arr is basically an arr of key val pairs lol
+$user = [
+    "name" => "Alice",
+    "age" => 25,
+    "email" => "alice@example.com"
+];
+
+foreach ($user as $key => $value) {
+    echo "$key: $value<br>";
+}
+
 ?>
