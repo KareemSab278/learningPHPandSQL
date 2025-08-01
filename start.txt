@@ -1,0 +1,1 @@
+xampp/myphpadmin: sudo /opt/lampp/lampp st(op/art/atus)

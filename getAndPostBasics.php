@@ -1,3 +1,6 @@
+<?php
+include("header.html");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,4 +44,7 @@ echo $_POST["exampleInputEmail1"]; // this is technically an array and we need t
 echo "<br>";
 echo $_POST["exampleInputPassword1"]; // info in url now hidden
 // post is good for submitting sensitive info
+?>
+<?php
+include("footer.html")
 ?>

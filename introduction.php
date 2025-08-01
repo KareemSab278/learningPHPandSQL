@@ -4,7 +4,9 @@
 <!-- alt shift f to format dont forget lol -->
 <!-- you cant miss semicolons!; -->
 
-
+<?php
+include("header.html");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,4 +48,7 @@ echo "<br> hello, {$firstVar}"; // you can concat literals and vars
 // write conditions and outputs
 
 
+?>
+<?php
+include("footer.html")
 ?>
