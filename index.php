@@ -1,6 +1,7 @@
 <?php
 include("header.html");
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,11 +9,10 @@ include("header.html");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homepage</title>
-    <h1>Homepage</h1>
 </head>
 
 <body>
-
+    <h1>Homepage</h1>
 </body>
 
 </html>

@@ -40,3 +40,5 @@ function getcookie($name, $value, $time)
 <?php
 include("footer.html")
 ?>
+
+<!-- cookies are just info about a user stored in a web browser -->
