@@ -1,38 +1,66 @@
--- Basic Commands
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SQL Cheat Sheet</title>
+  <style>
+    body { font-family: monospace; background: #f9f9f9; padding: 20px; }
+    h2 { border-bottom: 1px solid #ccc; }
+    pre { background: #eee; padding: 10px; }
+  </style>
+</head>
+<body>
+
+  <h2>Basic Commands</h2>
+  <pre>
 SELECT column1, column2 FROM table;               -- Get data
 SELECT * FROM table;                              -- Get all columns
 INSERT INTO table (col1, col2) VALUES (val1, val2);  -- Add data
 UPDATE table SET col1 = val WHERE condition;         -- Update data
 DELETE FROM table WHERE condition;                    -- Delete data
+  </pre>
 
--- Filtering
+  <h2>Filtering</h2>
+  <pre>
 WHERE condition                                  -- Filter rows
 AND / OR                                        -- Combine conditions
 LIKE '%pattern%'                                -- Pattern matching
 IN (val1, val2)                                -- Multiple possible values
 BETWEEN val1 AND val2                           -- Range
+  </pre>
 
--- Sorting & Limiting
+  <h2>Sorting & Limiting</h2>
+  <pre>
 ORDER BY column ASC|DESC                        -- Sort results
 LIMIT number                                    -- Limit rows returned
+  </pre>
 
--- Aggregates
+  <h2>Aggregates</h2>
+  <pre>
 COUNT(column)                                  -- Count rows
 SUM(column)                                    -- Sum values
 AVG(column)                                    -- Average
 MIN(column), MAX(column)                        -- Min and Max values
 GROUP BY column                                -- Group rows
 HAVING condition                               -- Filter groups
+  </pre>
 
--- Joins
+  <h2>Joins</h2>
+  <pre>
 INNER JOIN table2 ON table1.col = table2.col    -- Only matching rows
 LEFT JOIN table2 ON table1.col = table2.col     -- All left table rows + matches
 RIGHT JOIN table2 ON table1.col = table2.col    -- All right table rows + matches
 FULL JOIN table2 ON table1.col = table2.col     -- All rows from both tables
+  </pre>
 
--- Others
+  <h2>Others</h2>
+  <pre>
 DISTINCT column                                -- Unique values
 IS NULL / IS NOT NULL                          -- Check for NULLs
 CREATE TABLE table (col1 TYPE, col2 TYPE);    -- Create table
 DROP TABLE table;                              -- Delete table
 ALTER TABLE table ADD column TYPE;             -- Add column
+  </pre>
+
+</body>
+</html>
