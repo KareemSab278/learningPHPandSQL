@@ -3,6 +3,7 @@
 <!-- i hate xampp like bruh is it xaamp xammp or xampp??? -->
 <!-- alt shift f to format dont forget lol -->
 <!-- you cant miss semicolons!; -->
+<!-- sudo /opt/lampp/lampp start -->
 
 <?php
 include("header.html");
